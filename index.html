@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    body {
+      background: url("images/pattern-background-desktop.svg");
+      background-color:  hsl(225, 100%, 94%);
+      font-size: 16px;
+      font-family: "Red Hat Display";
+    }
+
+   
+
+    main {
+      margin: 150px auto 150px auto;
+      width: 375px;
+      height: 600px;
+      border-radius: 25px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hero {
+      width: 375px;
+      height: 200px;
+      border-radius: 25px 25px 0px 0px;
+    }
+
+    .OrderSummary {
+      padding-top: 10px;
+      font-size: 1.75em;
+      text-align: center;
+    }
+
+    .para {
+      text-align: center;
+      padding: 0px 78px 0px 78px;
+      font-weight: 100;
+    }
+
+    .innercon {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0px 60px 0px 60px;
+    }
+
+    .innerest {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .hero2 {
+      width: 48px;
+      height: 48px;
+      margin-top: 15px;
+    }
+
+    .details {
+      padding-left: 15px;
+     align-self: center;
+    }
+
+    .change-link {
+      margin-top: 30px;
+    }
+
+    .change-link:hover {
+      transform: scale(1.1);
+    }
+
+    button {
+      width: 75%;
+      height: 40px;
+      border-radius: 10px;
+      color: white;
+      font-size: smaller;
+      margin: auto;
+    }
+
+    .button1 {
+      background-color: hsl(245, 75%, 52%);
+      
+    }
+
+    .button2 {
+      background-color: white;
+      color: black;
+      font-weight: 100;
+      border-style: hidden;
+    }
+    
+    .button1:hover {
+      box-shadow: 0px 15px 5px 5px hsl(245, 75%, 95%);
+      transform: scale(1.1);
+    }
+
+    .button2:hover {
+      box-shadow: 0px 0px 5px 5px hsl(255, 75%, 95%);
+      transform: scale(0.9);
+    }
+    
+
+
+
+  </style>
+</head>
+<body>
+  <main>
+    <img src="images/illustration-hero.svg" class="hero">
+  
+  <h1 class="OrderSummary">Order Summary</h1>
+
+  <p class="para">You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+
+<div class="innercon">
+  <div class="innerest">
+  <img src="images/icon-music.svg" class="hero2">
+
+  <p class="details"><span style="font-weight: 700;">Annual Plan</span><br> $59.99/year</p>
+  </div>
+  
+  <a href="#" class="change-link">Change</a>
+
+</div>
+  
+
+  
+  <button class="button1"><h2 style="font-weight: 400; margin-top: 6px;">Proceed to Payment</h2></button>
+  <button class="button2"><h2 style="font-weight: 300; margin-top: 6px;">Cancel Order</h2></button>
+
+  </main>
+</body>
+</html>
